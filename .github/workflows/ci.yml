@@ -84,11 +84,11 @@ jobs:
     
     - name: Build Docker images
       run: |
-        docker-compose build
+        docker compose build
     
     - name: Start services
       run: |
-        docker-compose up -d
+        docker compose up -d
     
     - name: Wait for services
       run: |
@@ -105,11 +105,11 @@ jobs:
     - name: Check logs
       if: failure()
       run: |
-        docker-compose logs
+        docker compose logs
     
     - name: Stop services
       run: |
-        docker-compose down
+        docker compose down
 
   lint:
     runs-on: ubuntu-latest
