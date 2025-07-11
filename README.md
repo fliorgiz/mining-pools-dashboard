@@ -9,7 +9,9 @@
 Быстрый старт через Docker:
 
 git clone https://github.com/fliorgiz/mining-pools-dashboard.git
+
 docker-compose up --build
+
 Как только видим "backend-1   | Server running on http://localhost:3001" - открываем http://localhost в браузере
 
 Остановка:
